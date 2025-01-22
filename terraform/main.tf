@@ -8,6 +8,7 @@ resource "aws_instance" "web_server" {
   key_name      = "Project"  # The name of your key pair
   subnet_id     = "subnet-028111a6722578889"
   vpc_security_group_ids = ["sg-079b7d8accf6c1422"]
+  ebs_optimized = true
 
   # Enable detailed monitoring
   monitoring = true
